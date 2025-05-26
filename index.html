@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Intro Component</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main class="main-wrapper">
+      <section class="intro-section">
+        <h1 class="main-title">Learn to code by watching others</h1>
+        <p class="main-description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <section class="form-section">
+        <div class="catch-line-wrapper">
+          <p class="catch-line">
+            <span class="catch-line-bold">Try it free 7 days</span>
+            then $20/mo. thereafter
+          </p>
+        </div>
+        <form class="form">
+          <label class="sr-only" for="input-last-first-name"
+            >First Name :</label
+          >
+          <input
+            class="input"
+            placeholder="First Name"
+            type="text"
+            name="input-last-first-name"
+            id="input-last-first-name"
+            required
+          />
+
+          <label class="sr-only" for="input-last-name">Last Name :</label>
+          <input
+            class="input"
+            placeholder="Last Name"
+            type="text"
+            name="input-last-name"
+            id="input-last-name"
+            required
+          />
+
+          <label class="sr-only" for="input-email">Email :</label>
+          <input
+            class="input"
+            placeholder="Email Adress"
+            type="email"
+            name="input-email"
+            id="input-email"
+            required
+          />
+
+          <label class="sr-only" for="input-password">Password :</label>
+          <input
+            class="input"
+            placeholder="Password"
+            type="password"
+            name="input-password"
+            id="input-password"
+            required
+          />
+
+          <input class="submit" type="submit" value="CLAIM YOUR FREE TRIAL" />
+
+          <p class="terms-services">
+            By clicking the button, you are agreeing to our
+            <a class="terms-services-link" href="#">Terms and Services</a>
+          </p>
+        </form>
+      </section>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

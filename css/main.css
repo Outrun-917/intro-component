@@ -1,0 +1,152 @@
+:root {
+  --white: #ffffff;
+  --purple: #5e54a4;
+  --border: #dedede;
+  --green: #38cc8b;
+  --gray: #bab7d4;
+  --red: #ff7979;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100vh;
+  background-image: url("../assets/background.png");
+  background-size: 100vh;
+  padding: 88px 24px 68px 24px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-title {
+  color: var(--white);
+  margin: unset;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.main-description {
+  color: var(--white);
+  margin: unset;
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.catch-line-wrapper {
+  background-color: var(--purple);
+  width: 100%;
+  padding: 18px 66px;
+  color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 24px;
+}
+
+.catch-line {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.catch-line-bold {
+  font-weight: 700;
+}
+
+.form {
+  width: 100%;
+  min-height: 328px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  background-color: var(--white);
+  padding: 24px;
+}
+
+.input {
+  width: 100%;
+  height: 56px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  margin-bottom: 16px;
+  outline: none;
+
+  &:focus {
+    border: 1px solid var(--purple);
+  }
+}
+
+.submit {
+  width: 100%;
+  background-color: var(--green);
+  height: 56px;
+  border-radius: 8px;
+  color: var(--white);
+  border: none;
+  box-shadow: inset 0 -4px rgba(0, 0, 0, 0.09);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+
+.terms-services {
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  max-width: 248px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.terms-services-link {
+  color: var(--red);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 120px 165px;
+  }
+
+  .main-wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .intro-section {
+    width: 50%;
+    text-align: left;
+    margin-right: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-description {
+    margin-bottom: unset;
+  }
+
+  .form-section {
+    width: 50%;
+  }
+}
